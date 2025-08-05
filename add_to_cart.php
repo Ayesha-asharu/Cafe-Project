@@ -27,7 +27,7 @@ try {
         $_SESSION['cart'] = [];
     }
 
-    // First, get the item details from the database to include the discount
+   
     $itemId = (string)$input['id'];
     try {
         $stmt = $db->prepare("SELECT price, discount FROM menu_items WHERE id = ?");
@@ -71,4 +71,5 @@ try {
         'message' => $e->getMessage()
     ]);
 }
+
 ?>
