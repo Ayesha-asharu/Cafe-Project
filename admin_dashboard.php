@@ -22,7 +22,7 @@ try {
     $stmt = $db->query("SELECT COUNT(*) FROM bookings WHERE DATE(date) = CURDATE()");
     $todaysReservations = $stmt->fetchColumn();
     
-    // Registered users (if you have a users table)
+    // Registered users 
     $userCount = 0;
     if ($db->query("SHOW TABLES LIKE 'users'")->rowCount() > 0) {
         $stmt = $db->query("SELECT COUNT(*) FROM users");
@@ -280,4 +280,5 @@ try {
         </main>
     </div>
 </body>
+
 </html>
