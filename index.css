@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background-image: url(images/top\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: #fffafa;
+}
+header h1{
+    font-size: 40px;
+    text-align: left;
+
+}
+.ri-cup-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.cart-count {
+    color: #ff5252; /* Red color for emphasis */
+    font-weight: bold;
+    margin-left: 2px;
+    border-radius: 50px;
+}
+
+.linkedpages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+ul a[href="cart.html"] {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 10px;
+}
+li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fffafa;
+}
+body{
+    background-color: whitesmoke;
+
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(57, 57, 57);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    margin: 0;
+}
+.btn {
+    display: inline-block;
+    background: #2267e6;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #43d300;
+    transform: translateY(-3px);
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+.feature {
+    border: 3px solid #5bc657;
+    border-radius: 10px ;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+.feature i {
+    font-size: 3rem;
+    color: #25e434;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.cta {
+    background: #f9f9f9;
+}
+.cta h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .features {
+        flex-direction: column;
+    }
+}
+
+
+
+.form{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.form input,select{
+   border: 1px solid #d0d0d0;
+   border-radius: 10px;
+   height: 45px;
+   width: 700px;
+   margin-bottom: 20px;
+   outline: none;
+   box-shadow: none;
+
+
+}
+.form input,select:focus{
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    
+}
+.form input[type="submit"]{
+    background-color: #16bf1c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+footer {
+    background-color: #7016bf;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+
+
+}
+footer div {
+    margin: 20px;
+    width: 22%;
+}
+footer h1{
+    font-size: 20px;
+    color: #d3aff5;
+}
+footer p{
+    font-size: 15px;
+    color: #fffafa;
+
+}
+.copy {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-left: 500px;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fffafa;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #ebe7e7;
+    border: none;
+    margin: 20px 0;
+}
+/* Add to index.css */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+
+.auth-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Auth Popup Styles */
+.auth-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    animation: popupFadeIn 0.3s;
+}
+
+.auth-popup h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.auth-form button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.auth-form button[type="submit"]:hover {
+    color: #45a049;
+}
+
+.switch-auth {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+}
+
+/* Add these styles to index.css */
+#logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+#user-greeting {
+    font-weight: bold;
+    margin-right: 15px;
+}
+.switch-auth span {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+/* Modal styles */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: black;
+}
+
+/* Welcome popup specific styles */
+.welcome-popup .modal-content {
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.welcome-buttons button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#admin-login-btn {
+    background-color: #e67e22;
+    color: white;
+}
+
+#customer-login-btn {
+    background-color: #16bf1c;
+    color: white;
+}
+
+.welcome-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Welcome popup specific styles */
+.welcome-popup .modal-content {
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.welcome-buttons button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#admin-login-btn {
+    background-color: #e67e22;
+    color: white;
+}
+
+#customer-login-btn {
+    background-color: #16bf1c;
+    color: white;
+}
+
+.welcome-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+/* Welcome Popup Styles */
+.welcome-popup {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-popup-content {
+    background-color: #fefefe;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.welcome-popup h2 {
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.welcome-popup p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.welcome-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#admin-login-btn {
+    background-color: #e67e22;
+    color: white;
+}
+
+#customer-login-btn {
+    background-color: #16bf1c;
+    color: white;
+}
+
+.welcome-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+.auth-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.auth-popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: black;
+}

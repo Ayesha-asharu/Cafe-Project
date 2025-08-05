@@ -1,0 +1,62 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* About section */
+.about-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+hr {
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 2pxpx;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7016bf;
+    color: white;
+}
+
